@@ -13,7 +13,7 @@ export default function Users() {
     
     
     const clickUser = (u) => {
-        getPostsofUsers(u.id).then(value => setPost({...value}))
+        getPostsofUsers(u.id).then(value => setPost([...value]))
 
     }
 
